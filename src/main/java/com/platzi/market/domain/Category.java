@@ -15,6 +15,6 @@ public class Category {
 
     private String description;
 
-    private Boolean state;
+    private Boolean status;
 
 }

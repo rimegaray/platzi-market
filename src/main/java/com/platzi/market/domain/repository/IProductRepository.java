@@ -10,4 +10,5 @@ public interface IProductRepository {
 
     List<Product> getAll();
     Optional<Product> getById(Long productId);
+    Product create(Product product);
 }

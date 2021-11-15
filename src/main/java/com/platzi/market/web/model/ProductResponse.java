@@ -1,15 +1,14 @@
-package com.platzi.market.domain;
+package com.platzi.market.web.model;
 
-import com.platzi.market.persistence.entity.CategoryEntity;
+import com.platzi.market.domain.Category;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.*;
 import java.math.BigDecimal;
 
 @Getter
 @Setter
-public class Product {
+public class ProductResponse {
 
     private Long productId;
 

@@ -31,13 +31,13 @@ public class PurchaseEntity {
     private String comment;
 
     @Column(name = "estado")
-    private Boolean state;
+    private String status;
 
     @ManyToOne
-    @JoinColumn(name = "id", insertable = false, updatable = false)
+    @JoinColumn(name = "id_cliente", insertable = false, updatable = false)
     private CustomerEntity customerEntity;
 
     @OneToMany(mappedBy = "productEntity")
-    private List<PruchaseProductEntity> purchaseProducts;
+    private List<PurchaseProductEntity> purchaseProducts;
 
 }

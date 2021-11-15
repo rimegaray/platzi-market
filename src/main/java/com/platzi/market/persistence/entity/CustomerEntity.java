@@ -13,8 +13,8 @@ import java.util.List;
 public class CustomerEntity {
 
     @Id
-    @Column(name = "id")
-    private Long customerId;
+    @Column(name = "id_cliente")
+    private String customerId;
 
     @Column(name = "nombre")
     private String name;

@@ -21,7 +21,7 @@ public class CategoryEntity {
     private String description;
 
     @Column(name = "estado")
-    private Boolean state;
+    private Boolean status;
 
     @OneToMany(mappedBy = "categoryEntity")
     private List<ProductEntity> products;

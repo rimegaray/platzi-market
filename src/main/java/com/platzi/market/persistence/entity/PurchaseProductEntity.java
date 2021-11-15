@@ -10,13 +10,10 @@ import java.math.BigDecimal;
 @Table(name = "compras_productos")
 @Getter
 @Setter
-public class PruchaseProductEntity {
+public class PurchaseProductEntity {
 
     @EmbeddedId
     private PruchaseProductPK id;
-
-    @Column(name = "descripcion")
-    private String description;
 
     @Column(name = "cantidad")
     private Integer quantity;
@@ -25,7 +22,7 @@ public class PruchaseProductEntity {
     private BigDecimal total;
 
     @Column(name = "estado")
-    private Boolean state;
+    private Boolean status;
 
     @ManyToOne
     @JoinColumn(name = "id_compra", insertable = false, updatable = false)

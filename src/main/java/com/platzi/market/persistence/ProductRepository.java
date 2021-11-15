@@ -27,4 +27,10 @@ public class ProductRepository implements IProductRepository {
         return productDao.findById(productId)
                 .map(productMapper::toProduct);
     }
+
+    @Override
+    public Product create(Product product) {
+        ProductEntity entity = productDao.save(productMapper.toProductEntity(product));
+        return productMapper.toProduct(entity);
+    }
 }

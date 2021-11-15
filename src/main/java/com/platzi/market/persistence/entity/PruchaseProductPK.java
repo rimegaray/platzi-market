@@ -12,7 +12,7 @@ import java.io.Serializable;
 public class PruchaseProductPK implements Serializable {
 
     @Column(name = "id_compra")
-    private Long puchaseId;
+    private Long purchaseId;
 
     @Column(name = "id_producto")
     private Long productId;

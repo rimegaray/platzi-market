@@ -2,6 +2,7 @@ package com.platzi.market.persistence.entity;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.context.annotation.Lazy;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
@@ -33,7 +34,7 @@ public class ProductEntity {
     private Integer stockQuantity;
 
     @Column(name = "estado")
-    private Boolean state;
+    private Boolean status;
 
     @ManyToOne
     @JoinColumn(name = "id_categoria", insertable = false, updatable = false)

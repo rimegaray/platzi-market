@@ -1,5 +1,6 @@
 package com.platzi.market;
 
+import com.platzi.market.domain.Category;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

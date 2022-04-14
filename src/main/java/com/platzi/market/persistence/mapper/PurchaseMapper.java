@@ -14,6 +14,7 @@ import java.util.List;
 )
 public interface PurchaseMapper {
 
+    @Mapping(target = "purchaseProducts", source = "purchaseProducts")
     Purchase toPurchase(PurchaseEntity entity);
     List<Purchase> toPurchases(List<PurchaseEntity> entities);
 

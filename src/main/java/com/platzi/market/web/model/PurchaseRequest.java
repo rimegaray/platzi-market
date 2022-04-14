@@ -1,16 +1,14 @@
-package com.platzi.market.domain;
+package com.platzi.market.web.model;
 
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.Column;
-import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.List;
 
 @Getter
 @Setter
-public class Purchase {
+public class PurchaseRequest {
 
     private Long purchaseId;
 
@@ -24,6 +22,6 @@ public class Purchase {
 
     private String status;
 
-    private List<PurchaseProduct> purchaseProducts;
+    private List<PurchaseProductRequest> purchaseProducts;
 
 }
